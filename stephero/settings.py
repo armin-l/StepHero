@@ -22,6 +22,8 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'users.User'
 
+GOOGLE_FIT_SECRET_JSON = os.path.join(BASE_DIR, 'client_secret.json')
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -1,0 +1,13 @@
+client_secret.json
+__pycache__/
+db.sqlite3
+*.pyc
+*.pyo
+*.log
+*.pot
+*.swp
+*.swo
+*.out
+.DS_Store
+debug.log
+.vscode/client_secret.json
