@@ -13,3 +13,13 @@ def group_statistics(request, group_id):
         'member_count': group.members.count(),
     }
     return render(request, 'group_statistics.html', context)
+
+def leaderboard(request, group_id):
+    group = get_object_or_404(Group, id=group_id)
+    members = group.members.all().order_by('-steps')
+
+    context = {
+        'group': group,
+        'members': members,
+    }
+    return render(request, 'leaderboard.html', context)
