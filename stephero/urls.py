@@ -1,9 +1,8 @@
 from django.contrib import admin
-from django.urls import path
-from users.views import google_fit_connect, google_fit_callback
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('google-fit/connect/', google_fit_connect, name='google_fit_connect'),
-    path('google-fit/callback/', google_fit_callback, name='google_fit_callback'),
+    path('', include('users.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
