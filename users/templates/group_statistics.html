@@ -1,0 +1,8 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>Statistics for {{ group.name }}</h1>
+  <p>Total Steps: {{ total_steps }}</p>
+  <p>Average Steps per Member: {{ average_steps }}</p>
+  <p>Member Count: {{ member_count }}</p>
+{% endblock %}
