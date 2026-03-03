@@ -1,10 +1,12 @@
-{% extends 'base_generic.html' %}
-
-{% block content %}
-  <h1>Leaderboard for {{ group.name }}</h1>
-  <ol>
-    {% for member in members %}
-      <li>{{ member.username }}: {{ member.steps }} steps</li>
-    {% endfor %}
-  </ol>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <h1>Group Leaderboard</h1>
+    <p>This page will display the leaderboard for the group.</p>
+</body>
+</html>
